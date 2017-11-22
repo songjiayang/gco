@@ -2,10 +2,31 @@
 
 Golang cross compile options shell script.
 
+### Installation
+
+#### Install script
+
+To download gco.sh with cURL:
+```bash
+curl https://raw.githubusercontent.com/songjiayang/gco/master/gco.sh -o  /usr/local/bin/gco
+```
+
+Or Wget:
+
+```bash
+wget https://raw.githubusercontent.com/songjiayang/gco/master/gco.sh -O /usr/local/bin/gco
+```
+
+Then make it runnable:
+
+```bash
+chmod +x /usr/local/bin/gco
+```
+
 ### Usage
 
 ```
-./gco.sh example 0.1 main.go
+gco example 0.1 main.go
 ```
 
 - example is app name.
@@ -32,7 +53,3 @@ Go to exmaple folder, run `./gco.sh example 0.1 main.go` , you will see
 --> building pkg/example-0.1.linux-arm64 main.go
 .......
 ```
-
-### Best practice
-
-copy `./gco.sh` to the user local bin then you can use it everywhere.
