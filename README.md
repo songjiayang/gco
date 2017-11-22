@@ -4,8 +4,6 @@ Golang cross compile options shell script.
 
 ### Installation
 
-#### Install script
-
 To download gco.sh with cURL:
 ```bash
 curl https://raw.githubusercontent.com/songjiayang/gco/master/gco.sh -o  /usr/local/bin/gco
