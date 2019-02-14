@@ -33,6 +33,6 @@ len=${#os[@]}
 
 for (( i=1; i<${len}+1; i++ ));
 do
-  echo "--> building pkg/$1-$2.${os[$i-1]}-${arches[$i-1]} $3"
+  echo "--> building pkg/$1_$2.${os[$i-1]}_${arches[$i-1]} $3"
   go build -a -o "pkg/$1_$2.${os[$i-1]}_${arches[$i-1]}" $3
 done
