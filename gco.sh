@@ -4,7 +4,7 @@ set -e
 if [ $# != 3 ]; then
   echo "Usage:"
 
-  echo "gco example 0.1 main.go"
+  echo "gco example v0.1.0 main.go"
   exit 1
 fi
 
@@ -34,5 +34,5 @@ len=${#os[@]}
 for (( i=1; i<${len}+1; i++ ));
 do
   echo "--> building pkg/$1-$2.${os[$i-1]}-${arches[$i-1]} $3"
-  go build -a -o "pkg/$1-$2.${os[$i-1]}-${arches[$i-1]}" $3
+  go build -a -o "pkg/$1_$2.${os[$i-1]}_${arches[$i-1]}" $3
 done
